@@ -12,7 +12,7 @@
     //if (chucnang == null)
     //    chucnang = "TrangChu";
     
-    String VIEW = "../page/Dsbaithi.jsp";
+    String VIEW = "../page/viewDSBaidathi.jsp";
    
 %>
 

@@ -50,8 +50,8 @@ public class Accountmanager {
 		return lstuser;
 	}
 
-	public boolean ThemNguoiDung(User u) throws SQLException {
-		boolean kq = false;
+	public int addUser(User u) throws SQLException {
+		int kq = 0;
 
 		DateFormat datefm = new SimpleDateFormat("yyyy-mm-dd");
 		String sql = String
@@ -62,9 +62,16 @@ public class Accountmanager {
 		db = new DatabaseManager();
 		int n = db.executeUpdate(sql);
 		if (n == 1)
-			kq= true;
+			kq = n;
 		db.close();
 		return kq;		
 	}
+        
+        public int deleteUser(User u)
+        {
+            int n = 0;
+            String sql = "";
+            return n;
+        }
 
 }
